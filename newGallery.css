@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+ background: rgb(240, 250, 250);
+ overflow-x: hidden;
+}
+
+@media screen and (max-width: 700px) {
+ .section{
+  position: relative;
+  width: 90vw;
+  padding: 0 10px;
+  margin: 1rem auto;
+ }
+ .img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  margin: 3px;
+  box-shadow: 2px 2px 5px pink;
+  transition: all 1s ease;
+ }
+ .nature{
+  margin-bottom: 7rem;
+ }
+ .selectedImg{
+  width: 100%;
+ left: 0;
+  top: 24rem;
+  /* border: 2px solid; */
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ }
+ 
+ .multiImg{
+  object-fit: cover;
+
+  width:100px;
+  height: 100px;
+ margin: 0 auto;
+ }
+ 
+}
+@media screen and (min-width: 700px) {
+ .section{
+  position: relative;
+  width: 95vw;
+  display: grid;
+  max-width: 1190px;
+  margin: auto;
+  gap: 2rem ;
+  grid-template-columns: 1fr 1fr 1fr ;
+  
+ }
+ .nature{
+  margin-bottom: 7rem;
+ }
+  .img {
+   transition: all 1s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 20rem;
+    cursor: pointer;
+    margin: 1rem ;
+    box-shadow: 2px 2px 5px pink;
+  }
+  .selectedImg{
+   width: 80vw;
+   margin:  auto;
+   top: 24rem;
+   /* border: 2px solid; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .multiImg{
+   object-fit: cover;
+   width:160px;
+   height: 160px;
+  margin: 0 5px;
+  }
+  
+ }
+.img:hover{
+transform: scale(0.97);
+}
+.modal-images{
+ width: 100%;
+ height: 50%;
+ text-align: center;
+}
+.main-img{
+ width: 70vw;
+ object-fit: cover;
+ display: flex;
+ margin:0 auto;
+ justify-content: center;
+}
+.closeBtn button{
+position: absolute;
+right:10px;
+font-size: 2rem;
+border: none;
+background: none;
+cursor: pointer;
+}
+.btn{
+ width: 100%;
+ top: 5rem;
+ left: 0;
+ display: none;
+ /* padding: 5px; */
+ /* border: 3px solid white; */
+ display: flex;
+ justify-content: center;
+ justify-content: space-between;
+ position: absolute;
+
+}
+.prev , .next{
+font-size: 1.5rem;
+border: none;
+background: transparent;
+padding: 5px;
+cursor: pointer;
+}
+.modal{
+ position:fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ width: 90vw;
+ height:90vh;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 20px;
+ color: black;
+ background:white;
+ padding: 1rem;
+ margin: 1rem auto;
+ display: none;
+}
+.open{
+ display: flex;
+}
+.selected{
+ opacity: 1;
+}
+
+
+
+
+
