@@ -30,7 +30,8 @@ body{
  .selectedImg{
   width: 100%;
  left: 0;
-  top: 24rem;
+ right: 0;
+  top: 29rem;
   /* border: 2px solid; */
  position: absolute;
  display: flex;
@@ -72,7 +73,9 @@ body{
   .selectedImg{
    width: 80vw;
    margin:  auto;
-   top: 24rem;
+   top: 29rem;
+   left: 0;
+   right: 0;
    /* border: 2px solid; */
   position: absolute;
   display: flex;
@@ -90,12 +93,12 @@ body{
 .img:hover{
 transform: scale(0.97);
 }
-.modal-images{
+.main-img{
  width: 100%;
- height: 50%;
+ height: 65%;
  text-align: center;
 }
-.main-img{
+.main{
  width: 70vw;
  object-fit: cover;
  display: flex;
@@ -125,10 +128,15 @@ cursor: pointer;
 }
 .prev , .next{
 font-size: 1.5rem;
-border: none;
+border: 2px solid;
+
 background: transparent;
 padding: 5px;
 cursor: pointer;
+
+}
+img{
+  object-fit: cover;
 }
 .modal{
  position:fixed;
@@ -136,7 +144,7 @@ cursor: pointer;
  right: 0;
  left: 0;
  width: 90vw;
- height:90vh;
+ height:95vh;
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  font-size: 20px;
  color: black;
@@ -145,11 +153,21 @@ cursor: pointer;
  margin: 1rem auto;
  display: none;
 }
+.modal h2{
+  position: absolute;
+  color: aliceblue;
+  top: 21.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
 .open{
  display: flex;
 }
 .selected{
- opacity: 1;
+ opacity: 0.6;
+ 
 }
 
 
